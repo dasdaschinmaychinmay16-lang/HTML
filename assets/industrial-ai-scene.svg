@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Industrial AI automation scene">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".56" stop-color="#eaf4f2"/>
+      <stop offset="1" stop-color="#dfeaff"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5f7f9"/>
+      <stop offset="1" stop-color="#dce5ec"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102a43"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <style>
+      .signal{stroke-dasharray:10 12;animation:dash 9s linear infinite}
+      .pulse{animation:pulse 2.8s ease-in-out infinite;transform-origin:center}
+      .float{animation:float 5s ease-in-out infinite;transform-origin:center}
+      @keyframes dash{to{stroke-dashoffset:-180}}
+      @keyframes pulse{0%,100%{opacity:.45;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <path d="M0 668h1600v232H0z" fill="url(#floor)"/>
+  <path d="M0 706h1600M0 770h1600M0 834h1600" stroke="#c8d3dc" stroke-width="2"/>
+  <path d="M190 900 680 668M520 900 840 668M870 900 1000 668M1240 900 1140 668" stroke="#c8d3dc" stroke-width="2"/>
+
+  <g opacity=".85">
+    <rect x="890" y="170" width="420" height="250" rx="18" fill="#ffffff" stroke="#d9e2ea" stroke-width="4"/>
+    <rect x="920" y="205" width="160" height="86" rx="8" fill="url(#screen)"/>
+    <rect x="1102" y="205" width="176" height="28" rx="6" fill="#e8eff5"/>
+    <rect x="1102" y="249" width="132" height="22" rx="6" fill="#d9e2ea"/>
+    <rect x="1102" y="287" width="160" height="22" rx="6" fill="#d9e2ea"/>
+    <path d="M940 264c22-26 45-32 69-18 24 13 42 8 56-16" fill="none" stroke="#9fe7dd" stroke-width="7" stroke-linecap="round"/>
+    <circle class="pulse" cx="1016" cy="247" r="10" fill="#f6c453"/>
+    <circle class="pulse" cx="1058" cy="230" r="10" fill="#e85d4f"/>
+    <rect x="922" y="326" width="356" height="54" rx="8" fill="#f4f7fa"/>
+    <path d="M950 356h64m36 0h78m36 0h90" stroke="#0f766e" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g class="float">
+    <path d="M610 214 740 152l132 62v148l-132 62-130-62z" fill="#ffffff" stroke="#0f766e" stroke-width="5"/>
+    <path d="M610 214 740 278l132-64M740 278v146" fill="none" stroke="#0f766e" stroke-width="5" opacity=".65"/>
+    <circle cx="740" cy="278" r="34" fill="#e8f7f5" stroke="#0f766e" stroke-width="5"/>
+    <path d="M722 280h36M740 262v36" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+    <text x="740" y="476" text-anchor="middle" font-family="Sora, Arial" font-size="33" font-weight="800" fill="#17202a">Digital Twin</text>
+  </g>
+
+  <g>
+    <rect x="1020" y="545" width="260" height="96" rx="14" fill="#ffffff" stroke="#aab8c3" stroke-width="4"/>
+    <rect x="1064" y="470" width="170" height="90" rx="14" fill="#e8eff5" stroke="#aab8c3" stroke-width="4"/>
+    <path d="M1095 470v-72h108v72" fill="none" stroke="#566574" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="1092" cy="593" r="28" fill="#0f766e"/>
+    <circle cx="1208" cy="593" r="28" fill="#2563eb"/>
+    <path d="M1044 642v48M1256 642v48" stroke="#566574" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <rect x="455" y="530" width="250" height="112" rx="12" fill="#ffffff" stroke="#aab8c3" stroke-width="4"/>
+    <path d="M484 604h193" stroke="#0f766e" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="520" cy="642" r="28" fill="#f6c453"/>
+    <circle cx="640" cy="642" r="28" fill="#e85d4f"/>
+    <path d="M486 530v-62h188v62" fill="none" stroke="#566574" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g fill="none" stroke="#0f766e" stroke-width="5" opacity=".9">
+    <path class="signal" d="M705 332 C820 380 910 412 1040 545"/>
+    <path class="signal" d="M705 332 C652 422 624 474 580 530"/>
+    <path class="signal" d="M872 285 C942 260 950 252 920 248"/>
+  </g>
+
+  <g>
+    <circle class="pulse" cx="1370" cy="210" r="54" fill="#ffffff" stroke="#2563eb" stroke-width="5"/>
+    <path d="M1344 213h52M1370 187v52" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+    <circle class="pulse" cx="1398" cy="366" r="36" fill="#ffffff" stroke="#e85d4f" stroke-width="5"/>
+    <path d="M1382 366h32" stroke="#e85d4f" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>

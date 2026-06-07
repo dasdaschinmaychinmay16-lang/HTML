@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | lean2automate</title>
+  <meta name="description" content="Contact lean2automate for AI, ML, digital twin, automation consulting, and technical solution discussions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="lean2automate home">
+      <img src="assets/logo.svg" alt="" class="brand-mark">
+      <span>
+        <strong>lean2automate</strong>
+        <small>AI automation for industrial efficiency</small>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="industries.html">Industries</a>
+      <a href="freelancers.html">Freelancers</a>
+      <a class="nav-cta active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero reveal">
+      <p class="eyebrow">Contact</p>
+      <h1>Start your automation roadmap.</h1>
+      <p>
+        Tell us what you want to improve: downtime, manual work, quality, reporting,
+        planning, machine efficiency, or digital twin visibility.
+      </p>
+    </section>
+
+    <section class="live-graphic-section reveal">
+      <div class="live-copy">
+        <p class="eyebrow">Live enquiry graphic</p>
+        <h2>Route your challenge to the right automation workstream.</h2>
+        <p>
+          The live graphic shows how a business challenge can move into AI/ML, digital twin,
+          consulting, or implementation tracks after discovery.
+        </p>
+      </div>
+      <div class="live-graphic" data-live-graphic="contact">
+        <canvas aria-label="Animated enquiry routing graphic"></canvas>
+        <div class="live-readout">
+          <span>Routing paths</span>
+          <strong data-live-value="paths">04</strong>
+          <span>First step</span>
+          <strong data-live-value="step">Call</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-page-grid">
+      <form class="registration-form reveal" id="contact-form">
+        <div class="form-grid">
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+          <label>
+            Work email
+            <input type="email" name="email" placeholder="you@company.com" required>
+          </label>
+          <label>
+            Organisation
+            <input type="text" name="company" placeholder="Company name">
+          </label>
+          <label>
+            Interest
+            <select name="interest" required>
+              <option value="">Select area</option>
+              <option>AI &amp; ML solutions</option>
+              <option>Digital twins</option>
+              <option>Automation consulting</option>
+              <option>Technical implementation</option>
+              <option>Freelancer or partnership</option>
+            </select>
+          </label>
+          <label class="full">
+            Message
+            <textarea name="message" rows="6" placeholder="Briefly describe your challenge, process, machine, or workflow..." required></textarea>
+          </label>
+        </div>
+        <button class="button primary" type="submit">Send enquiry</button>
+        <p class="form-note" id="contact-note">You can also email us directly at hello@lean2automate.com.</p>
+      </form>
+
+      <aside class="contact-side reveal">
+        <article>
+          <h2>Email</h2>
+          <a href="mailto:hello@lean2automate.com">hello@lean2automate.com</a>
+        </article>
+        <article>
+          <h2>Best-fit conversations</h2>
+          <p>AI/ML pilots, digital twin feasibility, downtime reduction, workflow automation, dashboarding, and technical implementation.</p>
+        </article>
+        <article>
+          <h2>Typical first step</h2>
+          <p>A focused discovery call to understand process pain, available data, current systems, and success metrics.</p>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="brand footer-brand" href="index.html" aria-label="lean2automate home">
+          <img src="assets/logo.svg" alt="" class="brand-mark">
+          <span>
+            <strong>lean2automate</strong>
+            <small>AI automation for industrial efficiency</small>
+          </span>
+        </a>
+        <p>Consultancy and technical solutions for AI, ML, digital twins, and industrial automation.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="industries.html">Industries</a>
+        <a href="freelancers.html">Freelancers</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

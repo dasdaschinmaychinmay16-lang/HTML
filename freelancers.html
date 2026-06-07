@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Freelancer Registration | lean2automate</title>
+  <meta name="description" content="Register as a freelancer for lean2automate AI, ML, digital twin, automation, and technical delivery projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="lean2automate home">
+      <img src="assets/logo.svg" alt="" class="brand-mark">
+      <span>
+        <strong>lean2automate</strong>
+        <small>AI automation for industrial efficiency</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="primary-nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="industries.html">Industries</a>
+      <a class="active" href="freelancers.html">Freelancers</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="freelancer-page">
+    <section class="freelancer-hero reveal">
+      <p class="eyebrow">Freelancer network</p>
+      <h1>Join the lean2automate specialist bench.</h1>
+      <p>
+        Register your profile for AI, ML, digital twin, automation consulting, process engineering,
+        system integration, dashboarding, and technical delivery projects.
+      </p>
+    </section>
+
+    <section class="live-graphic-section reveal">
+      <div class="live-copy">
+        <p class="eyebrow">Live talent graphic</p>
+        <h2>Specialist skills aligned to real automation delivery.</h2>
+        <p>
+          The moving talent map connects freelancers across AI, ML, digital twins, process consulting,
+          integration, dashboards, and automation engineering.
+        </p>
+      </div>
+      <div class="live-graphic" data-live-graphic="freelancers">
+        <canvas aria-label="Animated freelancer skills network graphic"></canvas>
+        <div class="live-readout">
+          <span>Skill clusters</span>
+          <strong data-live-value="skills">07</strong>
+          <span>Project mode</span>
+          <strong data-live-value="mode">Hybrid</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="freelancer-layout">
+      <aside class="freelancer-panel reveal">
+        <h2>Profiles we value</h2>
+        <ul class="benefit-list">
+          <li>AI and ML engineers for prediction, optimization, and decision support</li>
+          <li>Digital twin specialists for simulation, monitoring, and asset modelling</li>
+          <li>Automation consultants who can map processes and improve operations</li>
+          <li>Developers, analysts, designers, and integration specialists for delivery</li>
+        </ul>
+      </aside>
+
+      <form class="registration-form reveal" id="freelancer-form">
+        <div class="form-grid">
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" placeholder="+91 98765 43210">
+          </label>
+          <label>
+            Location
+            <input type="text" name="location" placeholder="City, Country">
+          </label>
+          <label>
+            Experience
+            <select name="experience" required>
+              <option value="">Select level</option>
+              <option>0-2 years</option>
+              <option>3-5 years</option>
+              <option>6-10 years</option>
+              <option>10+ years</option>
+            </select>
+          </label>
+          <label>
+            Availability
+            <select name="availability" required>
+              <option value="">Select availability</option>
+              <option>Part-time</option>
+              <option>Full-time</option>
+              <option>Project-based</option>
+              <option>Advisory only</option>
+            </select>
+          </label>
+          <label class="full">
+            Primary skills
+            <textarea name="skills" rows="5" placeholder="AI/ML, digital twins, Python, PLC/SCADA, process mapping, automation, dashboards, integrations..." required></textarea>
+          </label>
+          <label class="full">
+            Portfolio, LinkedIn, or GitHub
+            <input type="url" name="portfolio" placeholder="https://">
+          </label>
+          <label class="full checkbox">
+            <input type="checkbox" name="consent" required>
+            <span>I agree to be contacted by lean2automate for relevant freelance opportunities.</span>
+          </label>
+        </div>
+        <button class="button primary" type="submit">Submit registration</button>
+        <p class="form-note" id="form-note">We will review your profile and contact you if your skills match active project opportunities.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="brand footer-brand" href="index.html" aria-label="lean2automate home">
+          <img src="assets/logo.svg" alt="" class="brand-mark">
+          <span>
+            <strong>lean2automate</strong>
+            <small>AI automation for industrial efficiency</small>
+          </span>
+        </a>
+        <p>Consultancy and technical solutions for AI, ML, digital twins, and industrial automation.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="industries.html">Industries</a>
+        <a href="freelancers.html">Freelancers</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

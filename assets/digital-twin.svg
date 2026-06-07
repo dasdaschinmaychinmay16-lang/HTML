@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img" aria-label="Digital twin industrial system">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef3ff"/>
+    </linearGradient>
+    <style>
+      .stream{stroke-dasharray:10 12;animation:stream 8s linear infinite}
+      .glow{animation:glow 2.4s ease-in-out infinite;transform-origin:center}
+      @keyframes stream{to{stroke-dashoffset:-160}}
+      @keyframes glow{0%,100%{opacity:.55}50%{opacity:1}}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="758" height="558" rx="8" fill="url(#bg)" stroke="#d9e2ea" stroke-width="2"/>
+  <g transform="translate(74 82)">
+    <rect x="0" y="238" width="258" height="110" rx="8" fill="#ffffff" stroke="#7a92a8" stroke-width="4"/>
+    <rect x="40" y="154" width="178" height="96" rx="8" fill="#e8eff5" stroke="#7a92a8" stroke-width="4"/>
+    <path d="M70 154V88h118v66" fill="none" stroke="#566574" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="72" cy="296" r="28" fill="#0f766e"/>
+    <circle cx="188" cy="296" r="28" fill="#2563eb"/>
+    <path d="M38 348v48M220 348v48" stroke="#566574" stroke-width="15" stroke-linecap="round"/>
+    <path d="M64 211h132" stroke="#0f766e" stroke-width="15" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(402 62)">
+    <path d="M130 0 260 70v150l-130 72L0 220V70z" fill="#ffffff" stroke="#0f766e" stroke-width="5"/>
+    <path d="M0 70 130 142 260 70M130 142v150" fill="none" stroke="#0f766e" stroke-width="5" opacity=".68"/>
+    <circle class="glow" cx="130" cy="142" r="36" fill="#e8f7f5" stroke="#0f766e" stroke-width="5"/>
+    <path d="M108 142h44M130 120v44" stroke="#0f766e" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke="#0f766e" stroke-width="5">
+    <path class="stream" d="M332 306 C410 296 452 256 500 208"/>
+    <path class="stream" d="M332 352 C448 402 524 390 610 354"/>
+    <path class="stream" d="M458 206 C398 156 360 122 298 118"/>
+  </g>
+  <g>
+    <rect x="454" y="352" width="210" height="104" rx="8" fill="#1f2933"/>
+    <text x="486" y="398" font-family="Sora, Arial" font-size="22" font-weight="800" fill="#ffffff">Live twin</text>
+    <path d="M486 426h70m24 0h44" stroke="#9fe7dd" stroke-width="9" stroke-linecap="round"/>
+    <circle class="glow" cx="642" cy="425" r="12" fill="#f6c453"/>
+  </g>
+  <g>
+    <rect x="138" y="78" width="170" height="88" rx="8" fill="#ffffff" stroke="#94a3b4" stroke-width="3"/>
+    <text x="166" y="130" font-family="Sora, Arial" font-size="21" font-weight="800" fill="#17202a">Sensors</text>
+    <circle class="glow" cx="280" cy="122" r="12" fill="#e85d4f"/>
+  </g>
+</svg>
