@@ -296,7 +296,7 @@ function drawCanvasGrid(ctx, width, height) {
 }
 
 function drawWireSphere(ctx, width, height, time, options = {}) {
-  const radius = options.radius || Math.min(width, height) * 0.24;
+  const radius = options.radius || Math.min(width, height) * 0.29;
   const pitch = 0.24 + pointer.ny * 0.18;
   const yaw = time * 0.00024 + pointer.nx * 0.3;
   const color = options.color || palette.cyan;
@@ -414,9 +414,9 @@ function drawDataColumns(ctx, width, height, time, color) {
   for (let x = -3; x <= 3; x += 1) {
     for (let z = -3; z <= 3; z += 1) {
       const wave = Math.sin(time * 0.0015 + x * 0.8 + z * 0.6);
-      const columnHeight = 28 + (wave + 1) * 24;
-      const base = rotatePoint({ x: x * 48, y: 70, z: z * 48 }, 0.72, time * 0.0002 + pointer.nx * 0.25);
-      const top = rotatePoint({ x: x * 48, y: 70 - columnHeight, z: z * 48 }, 0.72, time * 0.0002 + pointer.nx * 0.25);
+      const columnHeight = 36 + (wave + 1) * 30;
+      const base = rotatePoint({ x: x * 58, y: 82, z: z * 58 }, 0.72, time * 0.0002 + pointer.nx * 0.25);
+      const top = rotatePoint({ x: x * 58, y: 82 - columnHeight, z: z * 58 }, 0.72, time * 0.0002 + pointer.nx * 0.25);
       const pBase = projectPoint(base, width, height);
       const pTop = projectPoint(top, width, height);
       line(ctx, pBase, pTop, color, 3.5 * pTop.scale, 0.35);
@@ -433,9 +433,9 @@ function drawFlowNetwork(ctx, width, height, time, color) {
 
   for (let i = 0; i < count; i += 1) {
     const raw = {
-      x: Math.sin(i * 2.31) * 155,
-      y: Math.cos(i * 1.73) * 145,
-      z: Math.sin(i * 3.27) * 120
+      x: Math.sin(i * 2.31) * 190,
+      y: Math.cos(i * 1.73) * 165,
+      z: Math.sin(i * 3.27) * 145
     };
     nodes.push({
       raw,
@@ -461,7 +461,7 @@ function drawFlowNetwork(ctx, width, height, time, color) {
 }
 
 function drawTwinCube(ctx, width, height, time, color) {
-  const size = Math.min(width, height) * 0.2;
+  const size = Math.min(width, height) * 0.25;
   const vertices = [
     [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1],
     [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1]
@@ -508,14 +508,12 @@ function initLiveGraphic(container) {
   let visible = true;
 
   function resize() {
-    const rect = container.getBoundingClientRect();
+    const rect = canvas.getBoundingClientRect();
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     width = Math.max(280, rect.width);
     height = Math.max(280, rect.height);
     canvas.width = Math.round(width * dpr);
     canvas.height = Math.round(height * dpr);
-    canvas.style.width = `${width}px`;
-    canvas.style.height = `${height}px`;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
@@ -559,7 +557,7 @@ function initLiveGraphic(container) {
 
   resize();
   const resizeObserver = new ResizeObserver(resize);
-  resizeObserver.observe(container);
+  resizeObserver.observe(canvas);
 
   if ("IntersectionObserver" in window) {
     const visibilityObserver = new IntersectionObserver((entries) => {

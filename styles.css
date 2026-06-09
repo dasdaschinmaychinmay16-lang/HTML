@@ -1319,7 +1319,8 @@ main,
 
 .live-graphic {
   position: relative;
-  min-height: 360px;
+  height: 360px;
+  min-height: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 16px;
@@ -1327,10 +1328,12 @@ main,
 }
 
 .live-graphic canvas {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
-  min-height: inherit;
+  min-height: 0;
 }
 
 .command-stage .command-graphic {
@@ -2165,21 +2168,28 @@ select:focus {
   .page-hero h1,
   .freelancer-hero h1,
   .legal-hero h1 {
-    font-size: clamp(2.4rem, 13vw, 3.6rem);
+    font-size: clamp(2.2rem, 11vw, 3.1rem);
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
   .live-graphic-section {
+    gap: 18px;
     padding: 16px;
     border-radius: 17px;
   }
 
   .live-graphic {
-    min-height: 320px;
+    height: 280px;
+    min-height: 0;
   }
 
   .live-readout {
-    position: static;
-    margin: 0 12px 12px;
+    right: 10px;
+    bottom: 10px;
+    min-width: 170px;
+    max-width: calc(100% - 20px);
+    padding: 10px;
   }
 
   .page-cta {
