@@ -38,18 +38,33 @@ document.querySelectorAll(".menu-toggle").forEach((toggle) => {
 // Scroll reveals
 const revealItems = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window && !prefersReducedMotion) {
+  const pendingReveals = new Set(revealItems);
+  const revealItem = (item) => {
+    item.classList.add("visible");
+    pendingReveals.delete(item);
+    observer.unobserve(item);
+  };
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
+      revealItem(entry.target);
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.05 });
+
+  const revealPassedItems = () => {
+    const revealLine = window.innerHeight * 0.94;
+    pendingReveals.forEach((item) => {
+      if (item.getBoundingClientRect().top <= revealLine) revealItem(item);
+    });
+  };
 
   revealItems.forEach((item, index) => {
     item.style.transitionDelay = `${Math.min(index % 5, 4) * 55}ms`;
     observer.observe(item);
   });
+  window.addEventListener("scroll", revealPassedItems, { passive: true });
+  window.addEventListener("resize", revealPassedItems);
+  revealPassedItems();
 } else {
   revealItems.forEach((item) => item.classList.add("visible"));
 }

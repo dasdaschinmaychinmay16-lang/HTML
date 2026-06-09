@@ -1353,6 +1353,7 @@ main,
   position: absolute;
   right: 14px;
   bottom: 14px;
+  z-index: 1;
   display: grid;
   grid-template-columns: auto auto;
   gap: 7px 14px;
@@ -2190,6 +2191,8 @@ select:focus {
     min-width: 170px;
     max-width: calc(100% - 20px);
     padding: 10px;
+    background: rgba(5, 17, 27, 0.94);
+    backdrop-filter: none;
   }
 
   .page-cta {
