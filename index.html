@@ -3,312 +3,227 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>lean2automate | AI, ML, Digital Twins &amp; Industrial Automation</title>
-  <meta name="description" content="lean2automate delivers AI, ML, digital twin, automation consultancy, and technical solutions that improve human and machine efficiency while reducing process downtime.">
+  <title>lean2automate | Intelligent Industrial Automation</title>
+  <meta name="description" content="lean2automate builds AI, digital twins, and automation systems that make industrial operations more predictive, visible, and efficient.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="home-page">
+  <div class="cursor-light" aria-hidden="true"></div>
+
   <header class="topbar">
     <a class="brand" href="index.html" aria-label="lean2automate home">
-      <img src="assets/logo.svg" alt="" class="brand-mark">
-      <span>
-        <strong>lean2automate</strong>
-        <small>AI automation for industrial efficiency</small>
-      </span>
+      <img src="assets/logo.svg" alt="lean2automate" class="brand-mark">
     </a>
-
     <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
-
     <nav id="primary-nav" class="nav">
       <a class="active" href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="solutions.html">Solutions</a>
       <a href="industries.html">Industries</a>
-      <a href="freelancers.html">Freelancers</a>
-      <a class="nav-cta" href="contact.html">Contact</a>
+      <a href="freelancers.html">Talent</a>
+      <a class="nav-cta" href="contact.html">Start a project <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <img class="hero-art" src="assets/hero-humanoid-ai.png" alt="Premium humanoid AI operator with industrial automation and digital twin interfaces">
-      <div class="hero-overlay"></div>
+    <section class="hero immersive-hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">AI, ML, Digital Twins, Automation Consulting</p>
-        <h1>lean2automate</h1>
-        <p class="hero-lead">
-          We help organisations automate operations, predict downtime, build digital twins, and improve human
-          and machine efficiency through practical AI and engineering solutions.
-        </p>
+        <p class="eyebrow"><span class="status-dot"></span> Industrial intelligence, online</p>
+        <h1 id="hero-title">Make operations <span>think.</span></h1>
+        <p class="hero-lead">AI, digital twins, and automation built around measurable uptime.</p>
         <div class="hero-actions">
-          <a class="button primary" href="contact.html">Start automation roadmap</a>
-          <a class="button secondary" href="products.html#digital-twins">Explore digital twins</a>
+          <a class="button primary magnetic" href="contact.html">Build your roadmap <span>↗</span></a>
+          <a class="button secondary magnetic" href="#command-center">Explore the system <span>↓</span></a>
         </div>
-        <dl class="hero-proof" aria-label="Key business outcomes">
-          <div>
-            <dt>AI &amp; ML</dt>
-            <dd>Prediction, optimization, quality intelligence</dd>
-          </div>
-          <div>
-            <dt>Digital Twins</dt>
-            <dd>Virtual replicas for machines and processes</dd>
-          </div>
-          <div>
-            <dt>Automation</dt>
-            <dd>Consultancy plus technical implementation</dd>
-          </div>
-        </dl>
-      </div>
-
-      <div class="live-graphic hero-live-graphic reveal" data-live-graphic="operations">
-        <canvas aria-label="Animated live automation graphic"></canvas>
-        <div class="live-readout">
-          <span>AI signal</span>
-          <strong data-live-value="confidence">94%</strong>
-          <span>Risk trend</span>
-          <strong data-live-value="risk">18%</strong>
+        <div class="hero-signal" aria-label="Live system status">
+          <span><i></i> 24 signals live</span>
+          <span>94.8% confidence</span>
+          <span>12ms response</span>
         </div>
       </div>
+
+      <div class="hero-telemetry telemetry-a tilt-card reveal" data-tilt="5">
+        <span class="telemetry-label">Twin sync</span>
+        <strong>99.2%</strong>
+        <div class="meter"><i style="--value: 92%"></i></div>
+      </div>
+      <div class="hero-telemetry telemetry-b tilt-card reveal" data-tilt="6">
+        <span class="telemetry-label">Downtime risk</span>
+        <strong data-live-value="risk">18%</strong>
+        <svg viewBox="0 0 120 36" aria-hidden="true">
+          <path d="M2 28 C18 28 21 8 37 15 S58 31 70 18 92 4 118 10"></path>
+        </svg>
+      </div>
+      <a class="hero-scroll" href="#system-pulse" aria-label="Scroll to system overview">
+        <span></span> Scroll to inspect
+      </a>
     </section>
 
-    <section class="section live-graphic-section reveal">
-      <div class="live-copy">
-        <p class="eyebrow">Live operations graphic</p>
-        <h2>AI, machines, people, and process signals moving together.</h2>
-        <p>
-          This live visual represents how lean2automate connects machine data, human workflows,
-          AI models, and digital twin feedback into one operating loop.
-        </p>
-      </div>
-      <div class="live-graphic" data-live-graphic="operations">
-        <canvas aria-label="Animated operations automation graphic"></canvas>
-        <div class="live-readout">
-          <span>Model confidence</span>
-          <strong data-live-value="confidence">94%</strong>
-          <span>Downtime risk</span>
-          <strong data-live-value="risk">18%</strong>
-        </div>
-      </div>
+    <section id="system-pulse" class="system-pulse reveal" aria-label="Operational outcomes">
+      <article>
+        <span class="pulse-icon">↑</span>
+        <div><strong data-counter="32">0</strong><b>%</b><small>throughput potential</small></div>
+      </article>
+      <article>
+        <span class="pulse-icon">◫</span>
+        <div><strong data-counter="24">0</strong><b>/7</b><small>operational visibility</small></div>
+      </article>
+      <article>
+        <span class="pulse-icon">−</span>
+        <div><strong data-counter="41">0</strong><b>%</b><small>downtime exposure</small></div>
+      </article>
+      <p>One connected intelligence layer for machines, people, and process.</p>
     </section>
 
-    <section class="section intro-band reveal" aria-label="Business positioning">
-      <div>
-        <p class="eyebrow">Built for real operations</p>
-        <h2>From advisory to deployment, we turn automation ideas into measurable operating gains.</h2>
-      </div>
-      <p>
-        lean2automate works across sectors where repetitive manual work, machine downtime, process delays,
-        and disconnected systems slow teams down. Our work combines consulting, data science, integration,
-        and automation engineering.
-      </p>
-    </section>
-
-    <section id="solutions" class="section">
+    <section class="section capability-section" aria-labelledby="capability-title">
       <div class="section-heading reveal">
-        <p class="eyebrow">Core solution areas</p>
-        <h2>High-impact services for modern industry.</h2>
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="capability-title">Four systems. <span>One operating loop.</span></h2>
       </div>
-
-      <div class="solution-grid">
-        <article class="solution-card feature-card reveal">
-          <span class="card-kicker">Priority</span>
-          <h3>AI &amp; ML Solutions</h3>
-          <p>
-            Predictive maintenance, demand forecasting, anomaly detection, quality intelligence,
-            process recommendations, and decision support systems.
-          </p>
-          <a href="products.html#ai-ml">View AI &amp; ML products</a>
-        </article>
-        <article class="solution-card feature-card reveal">
-          <span class="card-kicker">Priority</span>
+      <div class="capability-deck">
+        <a class="capability-card tilt-card reveal" data-tilt="8" href="products.html#ai-ml">
+          <div class="capability-visual neural-visual" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <span class="card-index">01 / Predict</span>
+          <h3>AI + ML</h3>
+          <p>Failure signals become early action.</p>
+          <b class="card-arrow">↗</b>
+        </a>
+        <a class="capability-card tilt-card reveal" data-tilt="8" href="products.html#digital-twins">
+          <div class="capability-visual cube-visual" aria-hidden="true">
+            <div class="cube">
+              <i class="front"></i><i class="back"></i><i class="right"></i>
+              <i class="left"></i><i class="top"></i><i class="bottom"></i>
+            </div>
+          </div>
+          <span class="card-index">02 / Simulate</span>
           <h3>Digital Twins</h3>
-          <p>
-            Virtual replicas of machines, production lines, facilities, or workflows to simulate performance,
-            monitor assets, and identify downtime risks before they become costly.
-          </p>
-          <a href="products.html#digital-twins">View digital twin product</a>
-        </article>
-        <article class="solution-card reveal">
-          <span class="card-kicker">Consulting</span>
-          <h3>Automation Strategy</h3>
-          <p>Workflow audits, automation opportunity mapping, ROI modelling, process redesign, and adoption planning.</p>
-        </article>
-        <article class="solution-card reveal">
-          <span class="card-kicker">Engineering</span>
-          <h3>Technical Implementation</h3>
-          <p>Dashboards, integrations, data pipelines, AI assistants, monitoring tools, and automated task flows.</p>
-        </article>
+          <p>Test tomorrow before changing today.</p>
+          <b class="card-arrow">↗</b>
+        </a>
+        <a class="capability-card tilt-card reveal" data-tilt="8" href="solutions.html">
+          <div class="capability-visual flow-visual" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+            <span></span><span></span><span></span>
+          </div>
+          <span class="card-index">03 / Connect</span>
+          <h3>Automation</h3>
+          <p>Workflows move without the drag.</p>
+          <b class="card-arrow">↗</b>
+        </a>
+        <a class="capability-card tilt-card reveal" data-tilt="8" href="contact.html">
+          <div class="capability-visual pulse-visual" aria-hidden="true">
+            <i></i><span></span><span></span><span></span>
+          </div>
+          <span class="card-index">04 / Scale</span>
+          <h3>Engineering</h3>
+          <p>From useful pilot to working platform.</p>
+          <b class="card-arrow">↗</b>
+        </a>
       </div>
     </section>
 
-    <section id="ai-ml" class="section spotlight">
-      <div class="spotlight-copy reveal">
-        <p class="eyebrow">AI &amp; ML solutions</p>
-        <h2>Make operations predictive, adaptive, and easier to control.</h2>
-        <p>
-          We design AI and machine learning systems that sit close to business outcomes: fewer interruptions,
-          faster decisions, sharper quality control, better planning, and stronger throughput.
-        </p>
-        <div class="capability-list">
-          <article>
-            <h3>Predictive maintenance</h3>
-            <p>Detect early signals of failure and reduce unplanned machine downtime.</p>
-          </article>
-          <article>
-            <h3>Anomaly detection</h3>
-            <p>Identify unusual patterns in production, quality, process, or transactional data.</p>
-          </article>
-          <article>
-            <h3>Process optimization</h3>
-            <p>Recommend smarter routing, scheduling, staffing, and resource allocation.</p>
-          </article>
-          <article>
-            <h3>AI assistants</h3>
-            <p>Automate knowledge work, reporting, documentation, support, and approvals.</p>
-          </article>
+    <section id="command-center" class="command-section">
+      <div class="command-copy reveal">
+        <p class="eyebrow">Interactive command center</p>
+        <h2>Touch the <span>operating model.</span></h2>
+        <p>Select a layer to see how signals become decisions.</p>
+        <div class="command-tabs" role="tablist" aria-label="Operating model layers">
+          <button class="command-tab active" data-command="sense" role="tab" aria-selected="true">
+            <span>01</span> Sense
+          </button>
+          <button class="command-tab" data-command="think" role="tab" aria-selected="false">
+            <span>02</span> Think
+          </button>
+          <button class="command-tab" data-command="simulate" role="tab" aria-selected="false">
+            <span>03</span> Simulate
+          </button>
+          <button class="command-tab" data-command="act" role="tab" aria-selected="false">
+            <span>04</span> Act
+          </button>
         </div>
       </div>
-      <div class="spotlight-visual reveal">
-        <img src="assets/ai-ml-lab.svg" alt="AI and machine learning workflow with connected models and operational signals">
+
+      <div class="command-stage tilt-card reveal" data-tilt="3">
+        <div class="stage-grid" aria-hidden="true"></div>
+        <div class="live-graphic command-graphic" data-live-graphic="command">
+          <canvas aria-label="Interactive 3D automation command model"></canvas>
+        </div>
+        <div class="stage-badge badge-top">
+          <span>Active layer</span>
+          <strong data-command-label>SENSE</strong>
+        </div>
+        <div class="stage-badge badge-bottom">
+          <span>Signal health</span>
+          <strong data-live-value="confidence">94%</strong>
+        </div>
+        <div class="stage-orbit orbit-one" aria-hidden="true"></div>
+        <div class="stage-orbit orbit-two" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section id="digital-twins" class="section twin-section">
-      <div class="twin-visual reveal">
-        <img src="assets/digital-twin.svg" alt="Digital twin of an industrial line connected to live sensor data">
-      </div>
-      <div class="spotlight-copy reveal">
-        <p class="eyebrow">Digital twins solution</p>
-        <h2>See, simulate, and improve operations before downtime hits.</h2>
-        <p>
-          Our digital twin solutions connect live data, process logic, and visual operating models so teams
-          can understand performance, test scenarios, and make confident improvements.
-        </p>
-        <ul class="check-list">
-          <li>Machine and asset digital twins for uptime monitoring</li>
-          <li>Production line twins for bottleneck and capacity analysis</li>
-          <li>Process twins for service, logistics, and back-office workflows</li>
-          <li>Scenario simulation for maintenance, scheduling, and efficiency planning</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section metrics-strip reveal" aria-label="Operational outcomes">
-      <div>
-        <strong>Efficiency</strong>
-        <span>Improve human and machine productivity with automated task flows.</span>
-      </div>
-      <div>
-        <strong>Downtime</strong>
-        <span>Reduce machine and process downtime with predictive alerts.</span>
-      </div>
-      <div>
-        <strong>Visibility</strong>
-        <span>Unify data, dashboards, and digital models for faster decisions.</span>
-      </div>
-    </section>
-
-    <section id="industries" class="section">
+    <section class="section industries-showcase" aria-labelledby="industries-title">
       <div class="section-heading reveal">
-        <p class="eyebrow">Industries served</p>
-        <h2>Automation built around sector realities.</h2>
+        <p class="eyebrow">Built for motion</p>
+        <h2 id="industries-title">Across the physical <span>and digital floor.</span></h2>
       </div>
-      <div class="industry-grid">
-        <article class="industry-card reveal">
-          <h3>Manufacturing</h3>
-          <p>Predictive maintenance, line optimization, quality checks, digital twin factories.</p>
+      <div class="industry-orbit">
+        <div class="industry-core reveal" aria-hidden="true">
+          <span>L2A</span>
+          <i></i><i></i><i></i>
+        </div>
+        <a class="industry-node node-1 tilt-card reveal" href="industries.html">Manufacturing <span>↗</span></a>
+        <a class="industry-node node-2 tilt-card reveal" href="industries.html">Logistics <span>↗</span></a>
+        <a class="industry-node node-3 tilt-card reveal" href="industries.html">Healthcare <span>↗</span></a>
+        <a class="industry-node node-4 tilt-card reveal" href="industries.html">Finance <span>↗</span></a>
+        <a class="industry-node node-5 tilt-card reveal" href="industries.html">Retail <span>↗</span></a>
+        <a class="industry-node node-6 tilt-card reveal" href="industries.html">Education <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section build-path" aria-labelledby="path-title">
+      <div class="path-header reveal">
+        <div>
+          <p class="eyebrow">Deployment path</p>
+          <h2 id="path-title">See value. Then scale it.</h2>
+        </div>
+        <a class="button secondary magnetic" href="solutions.html">View delivery model <span>↗</span></a>
+      </div>
+      <div class="path-track">
+        <article class="path-step tilt-card reveal">
+          <span>01</span><i></i><h3>Discover</h3><p>Find the leverage.</p>
         </article>
-        <article class="industry-card reveal">
-          <h3>Logistics</h3>
-          <p>Route planning, warehouse automation, tracking, dispatch intelligence.</p>
+        <article class="path-step tilt-card reveal">
+          <span>02</span><i></i><h3>Prototype</h3><p>Prove the signal.</p>
         </article>
-        <article class="industry-card reveal">
-          <h3>Healthcare</h3>
-          <p>Scheduling, documentation, operational workflows, resource optimization.</p>
+        <article class="path-step tilt-card reveal">
+          <span>03</span><i></i><h3>Deploy</h3><p>Connect the floor.</p>
         </article>
-        <article class="industry-card reveal">
-          <h3>Retail</h3>
-          <p>Demand forecasting, inventory automation, customer support, order management.</p>
-        </article>
-        <article class="industry-card reveal">
-          <h3>Finance</h3>
-          <p>Reconciliation, approval automation, reporting, anomaly and risk detection.</p>
-        </article>
-        <article class="industry-card reveal">
-          <h3>Education</h3>
-          <p>Admissions, student engagement, administrative automation, analytics.</p>
+        <article class="path-step tilt-card reveal">
+          <span>04</span><i></i><h3>Improve</h3><p>Compound the gain.</p>
         </article>
       </div>
     </section>
 
-    <section id="process" class="section process-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Delivery model</p>
-        <h2>A practical route from discovery to scale.</h2>
+    <section class="section final-cta reveal">
+      <div class="cta-globe" aria-hidden="true">
+        <i></i><i></i><i></i><span></span>
       </div>
-      <div class="process-grid">
-        <article class="process-step reveal">
-          <span>01</span>
-          <h3>Assess</h3>
-          <p>Audit workflows, data, systems, machines, and pain points.</p>
-        </article>
-        <article class="process-step reveal">
-          <span>02</span>
-          <h3>Design</h3>
-          <p>Prioritize AI, ML, digital twin, and automation opportunities.</p>
-        </article>
-        <article class="process-step reveal">
-          <span>03</span>
-          <h3>Build</h3>
-          <p>Develop integrations, models, dashboards, automations, and controls.</p>
-        </article>
-        <article class="process-step reveal">
-          <span>04</span>
-          <h3>Improve</h3>
-          <p>Track outcomes, tune models, train users, and scale what works.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section freelancer-cta reveal">
       <div>
-        <p class="eyebrow">Freelancer network</p>
-        <h2>Specialists can register to support automation delivery.</h2>
+        <p class="eyebrow">Your operation, upgraded</p>
+        <h2>What should run <span>smarter next?</span></h2>
       </div>
-      <p>
-        We welcome freelance engineers, data scientists, AI builders, process consultants, designers,
-        analysts, and integration specialists for project-based work.
-      </p>
-      <a class="button secondary" href="freelancers.html">Register as freelancer</a>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>Build your AI automation roadmap with us.</h2>
-      </div>
-      <div class="contact-grid">
-        <article class="contact-card reveal">
-          <h3>Email</h3>
-          <a href="mailto:hello@lean2automate.com">hello@lean2automate.com</a>
-        </article>
-        <article class="contact-card reveal">
-          <h3>Focus areas</h3>
-          <p>AI, ML, digital twins, automation consulting, technical delivery, downtime reduction.</p>
-        </article>
-        <article class="contact-card reveal">
-          <h3>Engagements</h3>
-          <p>Discovery workshops, pilots, implementation sprints, managed optimization.</p>
-        </article>
-      </div>
+      <a class="button primary magnetic" href="contact.html">Start the conversation <span>↗</span></a>
     </section>
   </main>
 
@@ -316,20 +231,16 @@
     <div class="footer-inner">
       <div>
         <a class="brand footer-brand" href="index.html" aria-label="lean2automate home">
-          <img src="assets/logo.svg" alt="" class="brand-mark">
-          <span>
-            <strong>lean2automate</strong>
-            <small>AI automation for industrial efficiency</small>
-          </span>
+          <img src="assets/logo.svg" alt="lean2automate" class="brand-mark">
         </a>
-        <p>Consultancy and technical solutions for AI, ML, digital twins, and industrial automation.</p>
+        <p>Intelligence for moving operations.</p>
       </div>
       <nav class="footer-links" aria-label="Footer navigation">
-        <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="solutions.html">Solutions</a>
         <a href="industries.html">Industries</a>
-        <a href="freelancers.html">Freelancers</a>
+        <a href="freelancers.html">Talent</a>
+        <a href="privacy.html">Privacy</a>
       </nav>
     </div>
   </footer>
